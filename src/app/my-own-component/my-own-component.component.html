@@ -1,0 +1,34 @@
+
+<br/>
+    <h1 style="margin-left: 40%;">My ToDo List</h1>
+<hr width="50%">
+<!-- <form Table> -->
+    <table style="margin-left: 40%;">
+        <tr>
+            <td><label><B>Name</B></label></td>
+            <td><input type="text" #num size="12px" required/></td>
+            <td><input type="submit" value="ADD TASK" 
+                style="background-color: brown; color: white; font-style: Bold;"
+                (click)="onAddTask(num.value)">
+            </td>
+        </tr>
+    </table>
+    <br>
+<!-- <Task Table> -->
+<table border="1" style="margin-left: 40%; width: 20%;background-color: maroon;color:white">
+    <tr>
+        <!-- <th>Task Num</th> -->
+        <th>Task Name</th>
+        <!-- <th>Date Start</th>
+        <th>End Date</th> -->
+        <th>Action(s)</th> 
+    </tr>
+    <tr *ngFor="let item of list">
+        <td>{{item.name}}</td>
+         <td>
+            <input type="submit" (click)="onDeleteTask(num.value)" value="Remove"/>
+        </td>
+    </tr>
+</table>
+<br>
+<hr width="50%">

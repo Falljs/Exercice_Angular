@@ -1,0 +1,17 @@
+<h1 style="color:red;font-size:18px;text-decoration: underline;margin-left: 40%;;">Two ways DataBinding : </h1>
+<table style="margin-left: 40%;">
+    <tr>
+        <td><strong>StudentName</strong> : <input type="text" name="name" id="name" [(ngModel)]="nameStudent"></td>
+        <span style="color:red;"> {{nameStudent}}</span>
+    </tr>
+    <tr>
+        <td><strong>StudentLevel</strong> : <input type="text" name="level" id="level" [(ngModel)]="levelStudent"></td>
+        <span style="color:red;"> {{levelStudent}}</span>
+    </tr>
+    <tr>
+        <td><strong>StudentStatus</strong> : <input type="text" name="status" id="status" [(ngModel)]="statusStudent"></td>
+        <span style="color:red;">{{statusStudent}}</span>
+        <br><br>
+        <!--<span style="color:red;" [(ngFor)]="StudentInfo"></span>-->
+    </tr>
+</table>
